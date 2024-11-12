@@ -29,7 +29,7 @@ timeframes = {
     '5m': {'window_length': 14, 'volume_multiplier': 5, 'style': '**'},    # Moderate visibility
     '15m': {'window_length': 14, 'volume_multiplier': 5, 'style': '***'},  # Most prominent
 }
-local_timezone = pytz.timezone('Asia/Shanghai')
+local_timezone = pytz.timezone('Canada/Eastern')
 
 # Store rolling data and RSI history for each symbol and timeframe
 rolling_data = {tf: {} for tf in timeframes}
