@@ -12,15 +12,12 @@ It enables users to visualize live market data with automatic candlestick chart 
   - CandleViewer class location
   - Fetches candlestick data from a specified exchange and symbol
   - Displays real-time data in a candlestick chart
-  - Calculates and displays Relative Strength Index (RSI) values (TBD)
+  - Calculates and displays MA values    
   - Customizable interval and kline limit settings
   - Animated chart updates
-- `telegram alart.py`:
-  - Interface for pushing alert to telegram based on charts data
+- `main.py`:  
+  - Get top10 pairs by volume for user to choose
+  - Location of main function.
 
-## Todolist
-
-- [ ] Including stock data
-- [ ] RSI calculation
-- [ ] Telegram alert  interface/class (for fun)
-- [ ] Other indicators
+## Code Structure
+![8901537ba430d94c4fbfdb1f07cc023](https://github.com/user-attachments/assets/dab1a1ac-3f47-41f2-afdb-b68e951418c8)
