@@ -60,7 +60,7 @@ if __name__ == "__main__":
             interval_sec = int(input("Enter the interval in seconds (e.g., 60 for 1 minute): ").strip())
             
             # Instantiate CandleViewer with user input
-            candle_viewer = CandleViewer(symbol=symbol, interval_sec=interval_sec)
+            candle_viewer = CandleViewer(symbol=symbol, interval_sec=interval_sec, ma_periods=(25,50,))
             break
         except Exception as e:
             print(f"Please try again.")
