@@ -23,6 +23,8 @@ It enables users to visualize live market data with automatic candlestick chart 
 ![8901537ba430d94c4fbfdb1f07cc023](https://github.com/user-attachments/assets/dab1a1ac-3f47-41f2-afdb-b68e951418c8)
 
 ## Refer Link
+CCXT: https://github.com/ccxt/ccxt
+
 CCXT error hierarchy: https://github.com/ccxt/ccxt/blob/master/python/ccxt/base/errors.py
 
 mplfinance: https://github.com/matplotlib/mplfinance
