@@ -40,9 +40,13 @@ def get_top_10_pairs_by_volume(exchange_name='binance'):
         raise
 
 if __name__ == "__main__":
+    try:
+        top_10_pairs = get_top_10_pairs_by_volume()
+    except Exception as e:
+        print(f"Error fetching top 10 trading pairs: {e}")
+        exit()
     while True:
         try:
-            top_10_pairs = get_top_10_pairs_by_volume()
 
             print("\nTop 10 trading pairs on Binance recently:")
             for i, pair in enumerate(top_10_pairs, 1):
