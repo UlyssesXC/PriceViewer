@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Real-time candlestick chart viewer for stock/cryptocurrency pairs using `ccxt`, `mplfinance`, and `matplotlib`. 
+Real-time candlestick chart viewer for cryptocurrency pairs using `ccxt`, `mplfinance`, and `matplotlib`. 
 
 It enables users to visualize live market data with automatic candlestick chart with some indicators.
 
@@ -28,3 +28,5 @@ CCXT: https://github.com/ccxt/ccxt
 CCXT error hierarchy: https://github.com/ccxt/ccxt/blob/master/python/ccxt/base/errors.py
 
 mplfinance: https://github.com/matplotlib/mplfinance
+
+Animation demo: https://github.com/matplotlib/mplfinance/blob/493811dac9a203de7ec148fb95504e7d3f400ba5/examples/mpf_animation_demo2.py#L4
