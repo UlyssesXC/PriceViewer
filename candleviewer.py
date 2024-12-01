@@ -25,7 +25,7 @@ class CandleViewer:
         self.fig, self.ax = plt.subplots()
 
         # Start animation update
-        self.ani = FuncAnimation(self.fig, self.update, interval=1000, cache_frame_data=False)  # Refresh every 1 second
+        self.ani = FuncAnimation(self.fig, self.update, interval=1000, cache_frame_data=False)
         plt.show()
 
     def fetch_initial_klines(self):

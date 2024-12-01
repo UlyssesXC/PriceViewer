@@ -3,7 +3,7 @@ import ccxt
 import pandas as pd
 
 # Fetch data before user input.
-def get_top_10_pairs_by_volume(exchange_name='binance'):
+def get_top_10_pairs_by_volume(exchange_name='binance'): #coinbase crypto exchange crypto currency
     """Get the top 10 trading pairs by volume"""
     try:
         print("Fetching top 10 trading pairs by volume...")
@@ -25,7 +25,7 @@ def get_top_10_pairs_by_volume(exchange_name='binance'):
         # Convert to DataFrame for sorting
         df = pd.DataFrame(data)
         # Sort by volume and select the top 10
-        top_10 = df.sort_values(by='volume', ascending=False).head(10)
+        top_10 = df.sort_values(by='volume', ascending=False).head(10) #sory by volume
 
         return top_10['symbol'].tolist()
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Error fetching top 10 trading pairs: {e}")
         exit()
-    while True:
+    while True: #main loop
         try:
 
             print("\nTop 10 trading pairs on Binance recently:")
@@ -64,7 +64,7 @@ if __name__ == "__main__":
             interval_sec = int(input("Enter the interval in seconds (e.g., 60 for 1 minute): ").strip())
             
             # Instantiate CandleViewer with user input
-            candle_viewer = CandleViewer(symbol=symbol, interval_sec=interval_sec, ma_periods=(25,50,))
+            candle_viewer = CandleViewer(symbol=symbol, interval_sec=interval_sec, ma_periods=(25,50,)) # create candle viewer instance
             break
         except Exception as e:
             print(f"Please try again.")
